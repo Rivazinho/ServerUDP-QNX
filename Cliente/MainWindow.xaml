@@ -1,0 +1,36 @@
+﻿<Window x:Class="Practica3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practica3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="262.5" Width="478">
+    <Grid Height="231" VerticalAlignment="Top" Margin="0,0,2,0">
+
+        <TextBox x:Name="textBox_P" HorizontalAlignment="Left" Height="24" Margin="117,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="0,45"/>
+        <TextBox x:Name="textBox_I" HorizontalAlignment="Left" Height="22" Margin="117,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="0,35"/>
+        <TextBox x:Name="textBox_Ts" HorizontalAlignment="Left" Height="22" Margin="117,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="0,5"/>
+        <Label x:Name="Label_P" Content="Proporcional" HorizontalAlignment="Left" Margin="27,32,0,0" VerticalAlignment="Top" Height="26" Width="77"/>
+        <Label x:Name="Label_I" Content="Integral" HorizontalAlignment="Left" Margin="27,78,0,0" VerticalAlignment="Top" Height="26" Width="51"/>
+        <Label x:Name="Label_Ts" Content="Periodo" HorizontalAlignment="Left" Margin="27,120,0,0" VerticalAlignment="Top" Height="26" Width="51"/>
+        <Button x:Name="Boton_Consigna" Content="Enviar consigna" HorizontalAlignment="Left" Margin="285,101,0,0" VerticalAlignment="Top" Width="94" Click="Boton_Consigna_Click" Height="20"/>
+        <Slider x:Name="Slider_Consigna" HorizontalAlignment="Left" Margin="274,124,0,0" VerticalAlignment="Top" Height="22" Width="116" IsDirectionReversed="True" Maximum="200" Value="100" RenderTransformOrigin="0.5,0.5">
+            <Slider.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Slider.RenderTransform>
+        </Slider>
+        <Label x:Name="Label_Puerto" Content="Puerto" HorizontalAlignment="Left" Margin="257,31,0,0" VerticalAlignment="Top" Height="26" Width="45"/>
+        <TextBox x:Name="editorPuerto" HorizontalAlignment="Left" Height="22" Margin="331,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="8000"/>
+        <Label x:Name="Label_IP" Content="IP" HorizontalAlignment="Left" Margin="257,61,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.092,0.058" Height="26" Width="20"/>
+        <TextBox x:Name="editorIP" HorizontalAlignment="Left" Height="24" Margin="331,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="192.168.234.128"/>
+        <Label x:Name="LabelLectura" Content="Lectura" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="264,153,0,0"/>
+        <Label x:Name="LabelActuacion" Content="Actuación" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="264,184,0,0"/>
+
+    </Grid>
+</Window>
